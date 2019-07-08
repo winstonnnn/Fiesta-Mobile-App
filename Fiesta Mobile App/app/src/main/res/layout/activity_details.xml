@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".details">
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_view_detail"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/text_view_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#4d88ff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"/>
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/text_view_provice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:text="province: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_view_municipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Municipal "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_view_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:text="History "
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/user_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Ratings "
+                android:textColor="#5d3f68"
+                android:textSize="23sp" />
+
+            <RelativeLayout>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/averageRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/ratingBar"
+                    android:layout_alignParentTop="true"
+                    android:text="(0)"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:textSize="18sp"
+                    android:id="@+id/sumRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/averageRating"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:text="0 Reviews" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="User Comments "
+                android:textColor="#5d3f68"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+                <ListView
+                    android:id="@+id/commentsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    >
+
+                </ListView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="Events "
+                android:textColor="#5d3f68"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <ListView
+                    android:id="@+id/eventList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp">
+
+                </ListView>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/viewLocation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:text="View Location"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:background="#541E59"
+                android:text="Rate this fiesta"
+                android:textColor="#fff" />
+
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">R1 Fiesta Mobile</string>
+
+    <string name="search">Search</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+
+</resources>

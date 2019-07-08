@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        android:id="@+id/nav_home"/>
+    <item
+        android:icon="@drawable/ic_collections_black_24dp"
+        android:title="Gallery"
+        android:id="@+id/nav_gallery"/>
+    <item
+        android:icon="@drawable/ic_ac_unit_black_24dp"
+        android:title="Fiesta"
+        android:id="@+id/nav_fiesta"/>
+    <item
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Calendar"
+        android:id="@+id/nav_calendar"/>
+    <item
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        android:id="@+id/nav_profile"/>
+    <item
+        android:icon="@drawable/ic_accessibility_black_24dp"
+        android:title="Patron Saints"
+        android:id="@+id/nav_saint"/>
+</menu>

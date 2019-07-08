@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/comment_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sample@gmail.com"
+            android:layout_marginStart="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/comment_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sample"
+            android:layout_below="@+id/comment_email"
+            android:layout_marginStart="10dp"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
